@@ -10,7 +10,6 @@ public:
 
             while(l<r){
                 int sum = nums[i] + nums[l] + nums[r];
-
                 if(abs(sum-target) < abs(maxSum-target)){
                     maxSum = sum;
                 }
