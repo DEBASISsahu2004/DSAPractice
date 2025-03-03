@@ -15,6 +15,6 @@ public:
             if(nums[i] > pivot) result.push_back(nums[i]);
         }
 
-        return result;
+        return result;      
     }
 };
