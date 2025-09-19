@@ -6,8 +6,7 @@ public:
         int n = nums.size();
         for (int i = 0; i < n; i++) {
             mp[nums[i]]++;
-            if (mp[nums[i]] == (n / 3 + 1) &&
-                find(re.begin(), re.end(), nums[i]) == re.end()) {
+            if (mp[nums[i]] == (n / 3 + 1) ) {
                 re.push_back(nums[i]);
             }
         }
