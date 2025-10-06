@@ -8,8 +8,6 @@ public:
             high = max(nums[i], high);
         }
 
-        int re = INT_MAX;
-
         while (low <= high) {
             int mid = (low + high) / 2, sum = 0;
 
@@ -19,12 +17,11 @@ public:
 
             if (sum <= threshold) {
                 high = mid - 1;
-                re = min(re, mid);
             } else {
                 low = mid + 1;
             }
         }
 
-        return re;
+        return low;
     }
 };
